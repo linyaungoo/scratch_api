@@ -269,14 +269,16 @@ async function main() {
   log('Launching browser');
 
   const browser = await chromium.launch({
-    headless: true,
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage',
-      '--disable-gpu',
-    ],
-  });
+  headless: true,
+  channel: 'chromium',
+  args: [
+    '--no-sandbox',
+    '--disable-setuid-sandbox',
+    '--disable-dev-shm-usage',
+    '--disable-gpu',
+  ],
+});
+
 
   const context = await browser.newContext({ timezoneId: CONFIG.timezoneId });
   const page = await context.newPage();
