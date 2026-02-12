@@ -1,8 +1,9 @@
 {
   "name": "scratch_api",
   "version": "1.0.0",
-  "description": "",
+  "description": "SportsXZone Myanmar odds scraper API",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node index.js",
     "postinstall": "npx playwright install chromium"
@@ -10,11 +11,17 @@
   "engines": {
     "node": "18.x"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "playwright",
+    "scraper",
+    "football",
+    "odds",
+    "api"
+  ],
+  "author": "Lin Yaung Oo",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "playwright": "^1.58.2"
+    "playwright": "^1.58.2",
+    "express": "^4.19.2"
   }
 }
