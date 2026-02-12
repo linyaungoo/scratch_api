@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "postinstall": "npx playwright install chromium --with-deps"
+    "postinstall": "npx playwright install chromium"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "keywords": [],
   "author": "",
