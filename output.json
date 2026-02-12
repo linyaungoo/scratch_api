@@ -1,0 +1,1871 @@
+{
+  "author": "GGWP API",
+  "website": "https://ggwp-api.render.com",
+  "country": "Thailand",
+  "copyright": "Legal action will be taken if any unauthorized use of our API is found.",
+  "id": 1770905243561,
+  "date": "2026-02-12T14:07:23.561Z",
+  "completed": false,
+  "matches": [
+    {
+      "id": 1,
+      "matchId": 2032022683,
+      "home": {
+        "id": 4080779843,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2433022256,
+          "leagueId": null,
+          "name": "Argentina Liga Profesional"
+        }
+      },
+      "away": {
+        "id": 4080779843,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2433022256,
+          "leagueId": null,
+          "name": "Argentina Liga Profesional"
+        }
+      },
+      "startTime": "2026-02-12T22:00:00.000Z",
+      "closeTime": "2026-02-12T22:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 1,
+      "awayNo": 2,
+      "fixtureId": null,
+      "league": {
+        "id": 2433022256,
+        "leagueId": null,
+        "name": "Argentina Liga Profesional"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 2,
+      "matchId": 2517706818,
+      "home": {
+        "id": 4080779843,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2433022256,
+          "leagueId": null,
+          "name": "Argentina Liga Profesional"
+        }
+      },
+      "away": {
+        "id": 4080779843,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2433022256,
+          "leagueId": null,
+          "name": "Argentina Liga Profesional"
+        }
+      },
+      "startTime": "2026-02-13T00:15:00.000Z",
+      "closeTime": "2026-02-13T00:15:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 3,
+      "awayNo": 4,
+      "fixtureId": null,
+      "league": {
+        "id": 2433022256,
+        "leagueId": null,
+        "name": "Argentina Liga Profesional"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 3,
+      "matchId": 403998162,
+      "home": {
+        "id": 1181167139,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3832108204,
+          "leagueId": null,
+          "name": "Bahrain Premier League"
+        }
+      },
+      "away": {
+        "id": 1181167139,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3832108204,
+          "leagueId": null,
+          "name": "Bahrain Premier League"
+        }
+      },
+      "startTime": "2026-02-12T16:00:00.000Z",
+      "closeTime": "2026-02-12T16:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 5,
+      "awayNo": 6,
+      "fixtureId": null,
+      "league": {
+        "id": 3832108204,
+        "leagueId": null,
+        "name": "Bahrain Premier League"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 4,
+      "matchId": 3505697583,
+      "home": {
+        "id": 3189863190,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3087584111,
+          "leagueId": null,
+          "name": "Belgium Cup"
+        }
+      },
+      "away": {
+        "id": 3189863190,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3087584111,
+          "leagueId": null,
+          "name": "Belgium Cup"
+        }
+      },
+      "startTime": "2026-02-12T19:30:00.000Z",
+      "closeTime": "2026-02-12T19:30:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 7,
+      "awayNo": 8,
+      "fixtureId": null,
+      "league": {
+        "id": 3087584111,
+        "leagueId": null,
+        "name": "Belgium Cup"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 5,
+      "matchId": 2251662028,
+      "home": {
+        "id": 839807185,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 4022433263,
+          "leagueId": null,
+          "name": "Brazil Campeonato Carioca"
+        }
+      },
+      "away": {
+        "id": 839807185,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 4022433263,
+          "leagueId": null,
+          "name": "Brazil Campeonato Carioca"
+        }
+      },
+      "startTime": "2026-02-12T20:00:00.000Z",
+      "closeTime": "2026-02-12T20:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 9,
+      "awayNo": 10,
+      "fixtureId": null,
+      "league": {
+        "id": 4022433263,
+        "leagueId": null,
+        "name": "Brazil Campeonato Carioca"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 6,
+      "matchId": 3891429918,
+      "home": {
+        "id": 248043096,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3676470627,
+          "leagueId": null,
+          "name": "Brazil Serie A"
+        }
+      },
+      "away": {
+        "id": 248043096,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3676470627,
+          "leagueId": null,
+          "name": "Brazil Serie A"
+        }
+      },
+      "startTime": "2026-02-12T22:00:00.000Z",
+      "closeTime": "2026-02-12T22:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 11,
+      "awayNo": 12,
+      "fixtureId": null,
+      "league": {
+        "id": 3676470627,
+        "leagueId": null,
+        "name": "Brazil Serie A"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 7,
+      "matchId": 3968420189,
+      "home": {
+        "id": 248043096,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3676470627,
+          "leagueId": null,
+          "name": "Brazil Serie A"
+        }
+      },
+      "away": {
+        "id": 248043096,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3676470627,
+          "leagueId": null,
+          "name": "Brazil Serie A"
+        }
+      },
+      "startTime": "2026-02-12T22:30:00.000Z",
+      "closeTime": "2026-02-12T22:30:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 13,
+      "awayNo": 14,
+      "fixtureId": null,
+      "league": {
+        "id": 3676470627,
+        "leagueId": null,
+        "name": "Brazil Serie A"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 8,
+      "matchId": 2860323755,
+      "home": {
+        "id": 248043096,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3676470627,
+          "leagueId": null,
+          "name": "Brazil Serie A"
+        }
+      },
+      "away": {
+        "id": 248043096,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3676470627,
+          "leagueId": null,
+          "name": "Brazil Serie A"
+        }
+      },
+      "startTime": "2026-02-12T23:00:00.000Z",
+      "closeTime": "2026-02-12T23:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 15,
+      "awayNo": 16,
+      "fixtureId": null,
+      "league": {
+        "id": 3676470627,
+        "leagueId": null,
+        "name": "Brazil Serie A"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 9,
+      "matchId": 3050091410,
+      "home": {
+        "id": 248043096,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3676470627,
+          "leagueId": null,
+          "name": "Brazil Serie A"
+        }
+      },
+      "away": {
+        "id": 248043096,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3676470627,
+          "leagueId": null,
+          "name": "Brazil Serie A"
+        }
+      },
+      "startTime": "2026-02-13T00:30:00.000Z",
+      "closeTime": "2026-02-13T00:30:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 17,
+      "awayNo": 18,
+      "fixtureId": null,
+      "league": {
+        "id": 3676470627,
+        "leagueId": null,
+        "name": "Brazil Serie A"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 10,
+      "matchId": 906790175,
+      "home": {
+        "id": 285154737,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1595404863,
+          "leagueId": null,
+          "name": "Bulgaria Cup"
+        }
+      },
+      "away": {
+        "id": 285154737,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1595404863,
+          "leagueId": null,
+          "name": "Bulgaria Cup"
+        }
+      },
+      "startTime": "2026-02-12T16:00:00.000Z",
+      "closeTime": "2026-02-12T16:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 19,
+      "awayNo": 20,
+      "fixtureId": null,
+      "league": {
+        "id": 1595404863,
+        "leagueId": null,
+        "name": "Bulgaria Cup"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 11,
+      "matchId": 632034082,
+      "home": {
+        "id": 3980106216,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 4119016093,
+          "leagueId": null,
+          "name": "Colombia Primera A"
+        }
+      },
+      "away": {
+        "id": 3980106216,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 4119016093,
+          "leagueId": null,
+          "name": "Colombia Primera A"
+        }
+      },
+      "startTime": "2026-02-12T21:10:00.000Z",
+      "closeTime": "2026-02-12T21:10:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 21,
+      "awayNo": 22,
+      "fixtureId": null,
+      "league": {
+        "id": 4119016093,
+        "leagueId": null,
+        "name": "Colombia Primera A"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 12,
+      "matchId": 1264710003,
+      "home": {
+        "id": 3980106216,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 4119016093,
+          "leagueId": null,
+          "name": "Colombia Primera A"
+        }
+      },
+      "away": {
+        "id": 3980106216,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 4119016093,
+          "leagueId": null,
+          "name": "Colombia Primera A"
+        }
+      },
+      "startTime": "2026-02-12T23:20:00.000Z",
+      "closeTime": "2026-02-12T23:20:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 23,
+      "awayNo": 24,
+      "fixtureId": null,
+      "league": {
+        "id": 4119016093,
+        "leagueId": null,
+        "name": "Colombia Primera A"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 13,
+      "matchId": 2080444177,
+      "home": {
+        "id": 3980106216,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 4119016093,
+          "leagueId": null,
+          "name": "Colombia Primera A"
+        }
+      },
+      "away": {
+        "id": 3980106216,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 4119016093,
+          "leagueId": null,
+          "name": "Colombia Primera A"
+        }
+      },
+      "startTime": "2026-02-13T01:30:00.000Z",
+      "closeTime": "2026-02-13T01:30:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 25,
+      "awayNo": 26,
+      "fixtureId": null,
+      "league": {
+        "id": 4119016093,
+        "leagueId": null,
+        "name": "Colombia Primera A"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 14,
+      "matchId": 3605572181,
+      "home": {
+        "id": 1929734973,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2098034308,
+          "leagueId": null,
+          "name": "CONCACAF Champions Cup"
+        }
+      },
+      "away": {
+        "id": 1929734973,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2098034308,
+          "leagueId": null,
+          "name": "CONCACAF Champions Cup"
+        }
+      },
+      "startTime": "2026-02-13T01:00:00.000Z",
+      "closeTime": "2026-02-13T01:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 27,
+      "awayNo": 28,
+      "fixtureId": null,
+      "league": {
+        "id": 2098034308,
+        "leagueId": null,
+        "name": "CONCACAF Champions Cup"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 15,
+      "matchId": 1125133595,
+      "home": {
+        "id": 386580274,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 888584720,
+          "leagueId": null,
+          "name": "Copa Libertadores Qualification"
+        }
+      },
+      "away": {
+        "id": 386580274,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 888584720,
+          "leagueId": null,
+          "name": "Copa Libertadores Qualification"
+        }
+      },
+      "startTime": "2026-02-13T00:30:00.000Z",
+      "closeTime": "2026-02-13T00:30:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 29,
+      "awayNo": 30,
+      "fixtureId": null,
+      "league": {
+        "id": 888584720,
+        "leagueId": null,
+        "name": "Copa Libertadores Qualification"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 16,
+      "matchId": 2091816336,
+      "home": {
+        "id": 2022143347,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 4199577092,
+          "leagueId": null,
+          "name": "Denmark Cup"
+        }
+      },
+      "away": {
+        "id": 2022143347,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 4199577092,
+          "leagueId": null,
+          "name": "Denmark Cup"
+        }
+      },
+      "startTime": "2026-02-12T18:00:00.000Z",
+      "closeTime": "2026-02-12T18:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 31,
+      "awayNo": 32,
+      "fixtureId": null,
+      "league": {
+        "id": 4199577092,
+        "leagueId": null,
+        "name": "Denmark Cup"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 17,
+      "matchId": 897503565,
+      "home": {
+        "id": 2754274803,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 939109712,
+          "leagueId": null,
+          "name": "England Premier League"
+        }
+      },
+      "away": {
+        "id": 2754274803,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 939109712,
+          "leagueId": null,
+          "name": "England Premier League"
+        }
+      },
+      "startTime": "2026-02-12T20:00:00.000Z",
+      "closeTime": "2026-02-12T20:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 33,
+      "awayNo": 34,
+      "fixtureId": null,
+      "league": {
+        "id": 939109712,
+        "leagueId": null,
+        "name": "England Premier League"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 18,
+      "matchId": 3075820851,
+      "home": {
+        "id": 962966350,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3259912577,
+          "leagueId": null,
+          "name": "France National"
+        }
+      },
+      "away": {
+        "id": 962966350,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3259912577,
+          "leagueId": null,
+          "name": "France National"
+        }
+      },
+      "startTime": "2026-02-12T18:00:00.000Z",
+      "closeTime": "2026-02-12T18:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 35,
+      "awayNo": 36,
+      "fixtureId": null,
+      "league": {
+        "id": 3259912577,
+        "leagueId": null,
+        "name": "France National"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 19,
+      "matchId": 1849439867,
+      "home": {
+        "id": 3473189849,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2068004452,
+          "leagueId": null,
+          "name": "Hungary Cup"
+        }
+      },
+      "away": {
+        "id": 3473189849,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2068004452,
+          "leagueId": null,
+          "name": "Hungary Cup"
+        }
+      },
+      "startTime": "2026-02-12T17:00:00.000Z",
+      "closeTime": "2026-02-12T17:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 37,
+      "awayNo": 38,
+      "fixtureId": null,
+      "league": {
+        "id": 2068004452,
+        "leagueId": null,
+        "name": "Hungary Cup"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 20,
+      "matchId": 1347258615,
+      "home": {
+        "id": 2022239295,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2052156093,
+          "leagueId": null,
+          "name": "Iceland League Cup"
+        }
+      },
+      "away": {
+        "id": 2022239295,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2052156093,
+          "leagueId": null,
+          "name": "Iceland League Cup"
+        }
+      },
+      "startTime": "2026-02-12T18:00:00.000Z",
+      "closeTime": "2026-02-12T18:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 39,
+      "awayNo": 40,
+      "fixtureId": null,
+      "league": {
+        "id": 2052156093,
+        "leagueId": null,
+        "name": "Iceland League Cup"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 21,
+      "matchId": 400337232,
+      "home": {
+        "id": 3768855070,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1974378609,
+          "leagueId": null,
+          "name": "Italy Serie C Group B"
+        }
+      },
+      "away": {
+        "id": 3768855070,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1974378609,
+          "leagueId": null,
+          "name": "Italy Serie C Group B"
+        }
+      },
+      "startTime": "2026-02-12T17:00:00.000Z",
+      "closeTime": "2026-02-12T17:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 41,
+      "awayNo": 42,
+      "fixtureId": null,
+      "league": {
+        "id": 1974378609,
+        "leagueId": null,
+        "name": "Italy Serie C Group B"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 22,
+      "matchId": 3829918901,
+      "home": {
+        "id": 3768855070,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1974378609,
+          "leagueId": null,
+          "name": "Italy Serie C Group B"
+        }
+      },
+      "away": {
+        "id": 3768855070,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1974378609,
+          "leagueId": null,
+          "name": "Italy Serie C Group B"
+        }
+      },
+      "startTime": "2026-02-12T19:30:00.000Z",
+      "closeTime": "2026-02-12T19:30:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 43,
+      "awayNo": 44,
+      "fixtureId": null,
+      "league": {
+        "id": 1974378609,
+        "leagueId": null,
+        "name": "Italy Serie C Group B"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 23,
+      "matchId": 1797569402,
+      "home": {
+        "id": 2813616464,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1692314541,
+          "leagueId": null,
+          "name": "Netherlands Eerste Divisie"
+        }
+      },
+      "away": {
+        "id": 2813616464,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1692314541,
+          "leagueId": null,
+          "name": "Netherlands Eerste Divisie"
+        }
+      },
+      "startTime": "2026-02-12T19:00:00.000Z",
+      "closeTime": "2026-02-12T19:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 45,
+      "awayNo": 46,
+      "fixtureId": null,
+      "league": {
+        "id": 1692314541,
+        "leagueId": null,
+        "name": "Netherlands Eerste Divisie"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 24,
+      "matchId": 3221904297,
+      "home": {
+        "id": 2066062146,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1773492241,
+          "leagueId": null,
+          "name": "Romania Cup"
+        }
+      },
+      "away": {
+        "id": 2066062146,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1773492241,
+          "leagueId": null,
+          "name": "Romania Cup"
+        }
+      },
+      "startTime": "2026-02-12T16:00:00.000Z",
+      "closeTime": "2026-02-12T16:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 47,
+      "awayNo": 48,
+      "fixtureId": null,
+      "league": {
+        "id": 1773492241,
+        "leagueId": null,
+        "name": "Romania Cup"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 25,
+      "matchId": 3575107916,
+      "home": {
+        "id": 2066062146,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1773492241,
+          "leagueId": null,
+          "name": "Romania Cup"
+        }
+      },
+      "away": {
+        "id": 2066062146,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 1773492241,
+          "leagueId": null,
+          "name": "Romania Cup"
+        }
+      },
+      "startTime": "2026-02-12T18:30:00.000Z",
+      "closeTime": "2026-02-12T18:30:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 49,
+      "awayNo": 50,
+      "fixtureId": null,
+      "league": {
+        "id": 1773492241,
+        "leagueId": null,
+        "name": "Romania Cup"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 26,
+      "matchId": 1783225246,
+      "home": {
+        "id": 1921854505,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2242863848,
+          "leagueId": null,
+          "name": "Saudi Arabia Pro League"
+        }
+      },
+      "away": {
+        "id": 1921854505,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2242863848,
+          "leagueId": null,
+          "name": "Saudi Arabia Pro League"
+        }
+      },
+      "startTime": "2026-02-12T15:45:00.000Z",
+      "closeTime": "2026-02-12T15:45:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 51,
+      "awayNo": 52,
+      "fixtureId": null,
+      "league": {
+        "id": 2242863848,
+        "leagueId": null,
+        "name": "Saudi Arabia Pro League"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 27,
+      "matchId": 1393107172,
+      "home": {
+        "id": 1921854505,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2242863848,
+          "leagueId": null,
+          "name": "Saudi Arabia Pro League"
+        }
+      },
+      "away": {
+        "id": 1921854505,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2242863848,
+          "leagueId": null,
+          "name": "Saudi Arabia Pro League"
+        }
+      },
+      "startTime": "2026-02-12T17:30:00.000Z",
+      "closeTime": "2026-02-12T17:30:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 53,
+      "awayNo": 54,
+      "fixtureId": null,
+      "league": {
+        "id": 2242863848,
+        "leagueId": null,
+        "name": "Saudi Arabia Pro League"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 28,
+      "matchId": 248698410,
+      "home": {
+        "id": 1484755815,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 271630053,
+          "leagueId": null,
+          "name": "Spain Copa del Rey"
+        }
+      },
+      "away": {
+        "id": 1484755815,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 271630053,
+          "leagueId": null,
+          "name": "Spain Copa del Rey"
+        }
+      },
+      "startTime": "2026-02-12T20:00:00.000Z",
+      "closeTime": "2026-02-12T20:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 55,
+      "awayNo": 56,
+      "fixtureId": null,
+      "league": {
+        "id": 271630053,
+        "leagueId": null,
+        "name": "Spain Copa del Rey"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 29,
+      "matchId": 4124998637,
+      "home": {
+        "id": 235786462,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3808124217,
+          "leagueId": null,
+          "name": "Switzerland Super League"
+        }
+      },
+      "away": {
+        "id": 235786462,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 3808124217,
+          "leagueId": null,
+          "name": "Switzerland Super League"
+        }
+      },
+      "startTime": "2026-02-12T19:30:00.000Z",
+      "closeTime": "2026-02-12T19:30:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 57,
+      "awayNo": 58,
+      "fixtureId": null,
+      "league": {
+        "id": 3808124217,
+        "leagueId": null,
+        "name": "Switzerland Super League"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 30,
+      "matchId": 131738375,
+      "home": {
+        "id": 3235185758,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2193613366,
+          "leagueId": null,
+          "name": "UEFA Women's Champions League"
+        }
+      },
+      "away": {
+        "id": 3235185758,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2193613366,
+          "leagueId": null,
+          "name": "UEFA Women's Champions League"
+        }
+      },
+      "startTime": "2026-02-12T20:00:00.000Z",
+      "closeTime": "2026-02-12T20:00:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 59,
+      "awayNo": 60,
+      "fixtureId": null,
+      "league": {
+        "id": 2193613366,
+        "leagueId": null,
+        "name": "UEFA Women's Champions League"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    },
+    {
+      "id": 31,
+      "matchId": 302637846,
+      "home": {
+        "id": 3235185758,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2193613366,
+          "leagueId": null,
+          "name": "UEFA Women's Champions League"
+        }
+      },
+      "away": {
+        "id": 3235185758,
+        "teamId": null,
+        "name": "",
+        "engName": null,
+        "league": {
+          "id": 2193613366,
+          "leagueId": null,
+          "name": "UEFA Women's Champions League"
+        }
+      },
+      "startTime": "2026-02-12T17:45:00.000Z",
+      "closeTime": "2026-02-12T17:45:00.000Z",
+      "odds": 0,
+      "price": 0,
+      "homeUpper": true,
+      "goalTotal": 0,
+      "goalTotalPrice": 0,
+      "homeScore": 0,
+      "awayScore": 0,
+      "finished": true,
+      "calculating": false,
+      "hdpFinished": false,
+      "ouFinished": false,
+      "canceled": false,
+      "bodyGap": 0,
+      "goalsGap": 0,
+      "homeNo": 61,
+      "awayNo": 62,
+      "fixtureId": null,
+      "league": {
+        "id": 2193613366,
+        "leagueId": null,
+        "name": "UEFA Women's Champions League"
+      },
+      "location": {
+        "id": 68,
+        "locationId": 1,
+        "name": ""
+      },
+      "singleBet": true,
+      "highTax": false,
+      "active": true,
+      "status": 1,
+      "autoUpdate": false
+    }
+  ]
+}
