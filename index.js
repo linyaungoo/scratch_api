@@ -21,33 +21,29 @@ const log = (m) =>
 const normalize = (v) =>
   String(v || '').replace(/\s+/g, ' ').trim();
 
-function fnv1a32(str) {
-  let h = 0x811c9dc5;
-  for (let i = 0; i < str.length; i++) {
-    h ^= str.charCodeAt(i);
-    h = Math.imul(h, 0x01000193);
-  }
-  return h >>> 0;
-}
-
-const stableId = (seed) => fnv1a32(String(seed || ''));
-
 /* =========================
-   MYANMAR ODDS PARSER
+   MYANMAR ODDS PARSER (FINAL)
 ========================= */
-function parseMyanmarOdds(raw) {
+function parseBodyOdds(raw, isHome) {
   const s = normalize(raw);
-  const m = s.match(/^(=|\d+(?:\.\d+)?)([+-])(\d{1,3})$/);
+  const m = s.match(/(=|\d+)([+-])(\d{1,3})/);
   if (!m) return null;
 
-  const base = m[1] === '=' ? 0 : parseFloat(m[1]);
-  const sign = m[2] === '-' ? -1 : 1;
-  const frac = parseInt(m[3], 10) / 100;
+  return {
+    home: isHome,
+    goal: m[1] === '=' ? 0 : Number(m[1]),
+    price: Number(m[3]) // ALWAYS positive
+  };
+}
+
+function parseOuOdds(raw) {
+  const s = normalize(raw);
+  const m = s.match(/(\d+)([+-])(\d{1,3})/);
+  if (!m) return null;
 
   return {
-    value: m[1] === '=' ? sign * frac : base + frac,
-    gap: sign * frac,
-    base,
+    goal: Number(m[1]),
+    price: Number(m[3])
   };
 }
 
@@ -65,16 +61,16 @@ async function scrapeBody() {
   const context = await browser.newContext({
     timezoneId: CONFIG.timezoneId,
   });
+
   const page = await context.newPage();
 
   try {
     /* LOGIN */
     log('Logging in');
-    await page.goto(`${CONFIG.baseUrl}/sign-in`, {
-      waitUntil: 'networkidle',
-    });
+    await page.goto(`${CONFIG.baseUrl}/sign-in`, { waitUntil: 'networkidle' });
     await page.fill('#usercode', CONFIG.username);
     await page.fill('#password', CONFIG.password);
+
     await Promise.all([
       page.click('button[type="submit"]'),
       page.waitForNavigation({ waitUntil: 'networkidle' }),
@@ -86,30 +82,22 @@ async function scrapeBody() {
 
     /* BODY PAGE */
     log('Opening /body');
-    await page.goto(`${CONFIG.baseUrl}/body`, {
-      waitUntil: 'networkidle',
-    });
+    await page.goto(`${CONFIG.baseUrl}/body`, { waitUntil: 'networkidle' });
     await page.waitForSelector('time');
 
-    /* PARSE */
+    /* PARSE DOM */
     const matches = await page.evaluate(() => {
       const norm = (v) =>
         v?.textContent?.replace(/\s+/g, ' ').trim() || '';
 
-      function findLeague(el) {
-        let cur = el;
+      function findLeague(card) {
+        let cur = card;
         for (let i = 0; i < 12 && cur; i++) {
-          const h = cur.querySelector?.('h3');
+          const h = cur.querySelector('h3');
           if (h) return norm(h);
           cur = cur.parentElement;
         }
         return '';
-      }
-
-      function findOdds(container) {
-        return [...container.querySelectorAll('span,div')]
-          .map(norm)
-          .find((t) => /^(=|\d+)[+-]\d{1,3}$/.test(t));
       }
 
       const results = [];
@@ -124,33 +112,38 @@ async function scrapeBody() {
         if (!card) return;
 
         const league = findLeague(card);
-        const finished = card.textContent.includes('ပွဲပြီး');
 
         const hdpBox = card.querySelector('[class*="hdp"]');
         const ouBox = card.querySelector('[class*="ou"]');
 
         if (!hdpBox || !ouBox) return;
 
-        const hdpOdd = findOdds(hdpBox);
-        const ouOdd = findOdds(ouBox);
+        const homeRow = hdpBox.children[0];
+        const awayRow = hdpBox.children[1];
 
-        const rows = [...hdpBox.children];
-        const homeRow = rows[0];
-        const awayRow = rows[1];
+        const homeTeam = norm(homeRow);
+        const awayTeam = norm(awayRow.childNodes[0]);
 
-        const home = homeRow
-          ? norm(homeRow).replace(hdpOdd || '', '').trim()
-          : '';
-        const away = awayRow ? norm(awayRow) : '';
+        const oddsSpan =
+          awayRow.querySelector('span') ||
+          homeRow.querySelector('span');
+
+        if (!oddsSpan) return;
+
+        const handicapRaw = norm(oddsSpan);
+        const isHome = oddsSpan.className.includes('home');
+
+        const ouRaw = norm(
+          ouBox.querySelector('[class*="odds"]')
+        );
 
         results.push({
           league,
-          time: norm(timeEl),
-          home,
-          away,
-          handicap: hdpOdd || '',
-          ou: ouOdd || '',
-          finished,
+          homeTeam,
+          awayTeam,
+          bodyRaw: handicapRaw,
+          bodyHome: isHome,
+          ouRaw,
         });
       });
 
@@ -164,49 +157,27 @@ async function scrapeBody() {
       author: 'GGWP API',
       website: 'https://ggwp-api.render.com',
       country: 'Thailand',
-      id: Date.now(),
       date: new Date().toISOString(),
-      completed: false,
       matches: [],
     };
 
-    matches.forEach((m, i) => {
-      const hdp = parseMyanmarOdds(m.handicap);
-      const ou = parseMyanmarOdds(m.ou);
-      const leagueId = stableId(m.league);
+    matches.forEach((m) => {
+      const body = parseBodyOdds(m.bodyRaw, m.bodyHome);
+      const ou = parseOuOdds(m.ouRaw);
+      if (!body || !ou) return;
 
       api.matches.push({
-        id: i + 1,
-        matchId: stableId(`${m.league}|${m.home}|${m.away}|${m.time}`),
-        home: {
-          id: stableId(m.home),
-          teamId: null,
-          name: m.home,
-          engName: null,
-          league: { id: leagueId, leagueId: null, name: m.league },
-        },
-        away: {
-          id: stableId(m.away),
-          teamId: null,
-          name: m.away,
-          engName: null,
-          league: { id: leagueId, leagueId: null, name: m.league },
-        },
-        startTime: m.time,
-        closeTime: m.time,
-        odds: hdp?.value || 0,
-        price: Math.abs((hdp?.value || 0) * 100),
-        homeUpper: true,
-        goalTotal: ou?.base || 0,
-        goalTotalPrice: Math.abs((ou?.gap || 0) * 100),
-        finished: m.finished,
-        active: true,
-        status: 1,
+        league: m.league,
+        home_team: m.homeTeam,
+        away_team: m.awayTeam,
+        body,
+        over_under: ou,
       });
     });
 
     await fs.writeFile('output.json', JSON.stringify(api, null, 2));
     return api;
+
   } finally {
     await context.close();
     await browser.close();
@@ -217,8 +188,8 @@ async function scrapeBody() {
    EXPRESS API
 ========================= */
 const app = express();
-let cache = null;
 let running = false;
+let cache = null;
 
 app.get('/health', (_, res) => {
   res.json({ status: 'ok', running });
@@ -226,6 +197,7 @@ app.get('/health', (_, res) => {
 
 app.get('/body', async (_, res) => {
   if (running) return res.json({ status: 'running' });
+
   try {
     running = true;
     cache = await scrapeBody();
