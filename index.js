@@ -22,7 +22,7 @@ const normalize = (v) =>
   String(v || '').replace(/\s+/g, ' ').trim();
 
 /* =========================
-   MYANMAR ODDS PARSER (FINAL)
+   ODDS PARSERS (FINAL RULES)
 ========================= */
 function parseBodyOdds(raw, isHome) {
   const s = normalize(raw);
@@ -32,7 +32,7 @@ function parseBodyOdds(raw, isHome) {
   return {
     home: isHome,
     goal: m[1] === '=' ? 0 : Number(m[1]),
-    price: Number(m[3]) // ALWAYS positive
+    price: `${m[2]}${m[3]}` // KEEP SIGN
   };
 }
 
@@ -43,7 +43,7 @@ function parseOuOdds(raw) {
 
   return {
     goal: Number(m[1]),
-    price: Number(m[3])
+    price: `${m[2]}${m[3]}`
   };
 }
 
@@ -85,8 +85,15 @@ async function scrapeBody() {
     await page.goto(`${CONFIG.baseUrl}/body`, { waitUntil: 'networkidle' });
     await page.waitForSelector('time');
 
+    /* SCROLL TO LOAD ALL LEAGUES */
+    log('Scrolling page to load all matches');
+    for (let i = 0; i < 25; i++) {
+      await page.mouse.wheel(0, 1200);
+      await page.waitForTimeout(400);
+    }
+
     /* PARSE DOM */
-    const matches = await page.evaluate(() => {
+    const rawMatches = await page.evaluate(() => {
       const norm = (v) =>
         v?.textContent?.replace(/\s+/g, ' ').trim() || '';
 
@@ -100,6 +107,7 @@ async function scrapeBody() {
         return '';
       }
 
+      const seen = new Set();
       const results = [];
 
       document.querySelectorAll('time').forEach((timeEl) => {
@@ -115,7 +123,6 @@ async function scrapeBody() {
 
         const hdpBox = card.querySelector('[class*="hdp"]');
         const ouBox = card.querySelector('[class*="ou"]');
-
         if (!hdpBox || !ouBox) return;
 
         const homeRow = hdpBox.children[0];
@@ -127,21 +134,24 @@ async function scrapeBody() {
         const oddsSpan =
           awayRow.querySelector('span') ||
           homeRow.querySelector('span');
-
         if (!oddsSpan) return;
 
-        const handicapRaw = norm(oddsSpan);
+        const bodyRaw = norm(oddsSpan);
         const isHome = oddsSpan.className.includes('home');
 
         const ouRaw = norm(
           ouBox.querySelector('[class*="odds"]')
         );
 
+        const key = `${league}|${homeTeam}|${awayTeam}|${bodyRaw}|${ouRaw}`;
+        if (seen.has(key)) return;
+        seen.add(key);
+
         results.push({
           league,
           homeTeam,
           awayTeam,
-          bodyRaw: handicapRaw,
+          bodyRaw,
           bodyHome: isHome,
           ouRaw,
         });
@@ -150,7 +160,7 @@ async function scrapeBody() {
       return results;
     });
 
-    log(`Parsed ${matches.length} matches`);
+    log(`Parsed ${rawMatches.length} unique matches`);
 
     /* BUILD API */
     const api = {
@@ -161,7 +171,7 @@ async function scrapeBody() {
       matches: [],
     };
 
-    matches.forEach((m) => {
+    rawMatches.forEach((m) => {
       const body = parseBodyOdds(m.bodyRaw, m.bodyHome);
       const ou = parseOuOdds(m.ouRaw);
       if (!body || !ou) return;
